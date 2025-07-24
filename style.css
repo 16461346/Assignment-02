@@ -8,10 +8,10 @@
 body {
   overflow-x: hidden;
 }
-a{
+.a{
     text-decoration: none;
 }
-li{
+.li{
     list-style: none;
 }
 /*Color ALL start*/
@@ -117,7 +117,8 @@ li{
 }
 
 .right-banar > img {
-  width: 25rem;
+  /* width: 25rem; */
+  width: 100%;
   margin-top: 100px;
   max-width: 100%;
   height: auto;
@@ -125,7 +126,7 @@ li{
 }
 
 .left-banar > h3 {
-  font-size: 65px;
+  font-size: 60px;
   margin-bottom: 15px;
 }
 /*Banar section end*/
@@ -142,8 +143,11 @@ li{
     margin: 0 0;
   }
   .right-banar > img {
-    width: 115%;
+    /* width: 115%; */
+    width:800px;
+    /* width: 100%; */
     margin-top: 28px;
+    /* padding: 0; */
   }
   .left-banar {
     padding-left: 20px;
@@ -154,7 +158,7 @@ li{
     font-size: 1.2rem;
   }
   .left-banar > h3 {
-    font-size: 2.375rem;
+    font-size: 2rem;
   }
 }
 
@@ -187,6 +191,9 @@ li{
   .cart-header > p {
     font-size: 1.2rem;
     margin-bottom: 30px;
+  }
+  main{
+    margin-top: 65px;
   }
 }
 
@@ -233,12 +240,12 @@ li{
 }
 
 /*Cart section responsive*/
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .cart-section {
     grid-template-columns: repeat(3, 1fr);
     margin: 0 40px 150px 40px;
   }
-}
+} */
 
 @media (max-width: 768px) {
   .cart-section {
@@ -255,9 +262,61 @@ li{
   }
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .cart-section {
     grid-template-columns: repeat(1, 1fr);
     margin: 0 10px 80px 10px;
   }
+} */
+.prove-section{
+  display: flex;
+  margin: 0 150px 130px 150px;
+}
+.prove-img{
+  position: relative;
+}
+.badge{
+  width: 270px;
+  position: absolute;
+  top: -20%;
+  right: -20%;
+  z-index: 10;
+}
+.prove-main-img{
+  width: 540px;
+}
+.prove-text{
+  padding: 38px 0px 38px 65px;
+}
+.prove-text>h3{
+  font-size: 50px;
+}
+.prove-text>ul>li{
+  margin: 20px 20px;
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width:768px) {
+
+  .prove-section{
+    display: block;
+    margin: 0;
+  }
+  .badge{
+    display: none;
+  }
+  .prove-main-img{
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+  }
+  .prove-text{
+    text-align: left;
+    margin: 0;
+    padding-left: 20px;
+  }
+  .prove-text>h3{
+  font-size: 2rem;
+}
 }

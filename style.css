@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.primary-margin{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.primary-color{
+    color: rgba(0, 0, 0, 0.5);
+}
+.color-1{
+    color: rgba(137, 135, 161, 1);
+}
+.color-2{
+    color: rgba(233, 90, 8, 1);
+}
+.home{
+    color: rgba(37, 36, 50, 1);
+}
+.notofont {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.interfont {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 150px;
+    padding-right: 150px;
+    margin: 20px auto ;
+    align-items: center;
+}
+.right-menu>ul{
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+.unic>.icon>a>img{
+    width: 25px;
+}
+.unic{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow-x: hidden;
+  }
+  .right-menu > ul li:not(.unic) {
+    display: none;
+  }
+  .unic {
+    display: flex;
+    overflow-x: hidden;
+    margin: 0 auto;
+  }
+}
+.banar {
+    margin-top: 100px;
+    height: 460px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-end;
+    position: relative;
+    /* background-color: #f2f2f2;  */
+}
+
+.left-banar {
+    margin-bottom: 10px;
+}
+
+.right-banar>img{
+    width: 25rem;
+    margin-top: 100px;
+}
+.left-banar>h3{
+    font-size: 65px;
+    margin-bottom: 15px;
+}
+@media (max-width: 768px) {
+    .banar{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 30px auto;
+        height: auto;
+        overflow: hidden;
+
+    }
+    .right-banar>img{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        margin-top: 28px;
+    }
+    .left-banar{
+        /* margin: 0 auto; */
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 28px;
+    }
+}
+
+

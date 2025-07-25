@@ -1,4 +1,4 @@
-
+/* ======= Reset & Basics ======= */
 * {
   margin: 0;
   padding: 0;
@@ -8,14 +8,17 @@
 body {
   overflow-x: hidden;
 }
-.a{
-    text-decoration: none;
-}
-.li{
-    list-style: none;
-}
-/*Color ALL start*/
 
+/* ======= Utility Classes ======= */
+.a {
+  text-decoration: none;
+}
+
+.li {
+  list-style: none;
+}
+
+/* ======= Color Palette ======= */
 .primary-color {
   color: rgba(0, 0, 0, 0.5);
 }
@@ -32,9 +35,7 @@ body {
   color: rgba(37, 36, 50, 1);
 }
 
-/*Color ALL end*/
-
-/* ========= FONT SECTION START ========= */
+/* ======= Fonts ======= */
 .notofont {
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
@@ -47,10 +48,8 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
 }
-/* ========= FONT SECTION END ========= */
 
-
-/* ========= NAVBAR START ========= */
+/* ======= Navbar ======= */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -61,7 +60,6 @@ body {
   max-width: 1200px;
 }
 
-/* Right Menu List */
 .right-menu > ul {
   display: flex;
   align-items: center;
@@ -69,19 +67,17 @@ body {
   list-style: none;
 }
 
-/* Icon (Cart or Profile etc.) */
 .unic > .icon > a > img {
   width: 25px;
 }
 
-/* Unic section (Cart or Login) */
 .unic {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-/* ========= NAVBAR RESPONSIVE ========= */
+/* Navbar Responsive */
 @media screen and (max-width: 768px) {
   .navbar {
     padding: 20px;
@@ -96,8 +92,7 @@ body {
   }
 }
 
-
-/* ========== Banner Section Start ========== */
+/* ======= Banner Section ======= */
 .banar {
   height: 460px;
   display: flex;
@@ -138,7 +133,7 @@ body {
   display: block;
 }
 
-/* ========== Banner Responsive ========== */
+/* Banner Responsive */
 @media (max-width: 768px) {
   .banar {
     flex-direction: column-reverse;
@@ -156,7 +151,6 @@ body {
   .left-banar {
     padding: 0 15px;
     margin-top: 28px;
-    /* text-align: center; */
   }
 
   .left-banar > h3 {
@@ -168,7 +162,7 @@ body {
   }
 }
 
-/* ========== Cart Header Start ========== */
+/* ======= Cart Header ======= */
 .cart-header {
   margin: 0 auto 50px;
   padding: 0 20px;
@@ -185,9 +179,8 @@ body {
   font-size: 22px;
   color: #555;
 }
-/* ========== Cart Header End ========== */
 
-/* ========== Cart Header Responsive ========== */
+/* Cart Header Responsive */
 @media (max-width: 768px) {
   .cart-header {
     margin: 0 auto 40px;
@@ -207,7 +200,8 @@ body {
     margin-top: 65px;
   }
 }
-/* ========== Cart Section Start ========== */
+
+/* ======= Cart Section ======= */
 .cart-section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -254,9 +248,8 @@ body {
 .cart > button:hover {
   background: #cc4f06;
 }
-/* ========== Cart Section End ========== */
 
-/* ========== Responsive: Mobile ========== */
+/* Cart Section Responsive */
 @media (max-width: 768px) {
   .cart-section {
     grid-template-columns: repeat(2, 1fr);
@@ -275,7 +268,7 @@ body {
   }
 }
 
-/* Prove Section Start */
+/* ======= Prove Section ======= */
 .prove-section {
   display: flex;
   gap: 40px;
@@ -319,7 +312,7 @@ body {
   margin-left: 20px;
 }
 
-/* Responsive Design */
+/* Prove Section Responsive */
 @media screen and (max-width: 768px) {
   .prove-section {
     flex-direction: column;
@@ -349,9 +342,8 @@ body {
     font-size: 18px;
   }
 }
-/* Prove Section End */
 
-/* ======== Deals Section Header ======== */
+/* ======= Deals Section ======= */
 .deals-head {
   margin-bottom: 120px;
   max-width: 1200px;
@@ -372,7 +364,6 @@ body {
   color: rgba(0, 0, 0, 0.5);
 }
 
-/* ======== Deals Image Container ======== */
 .deals-img {
   display: flex;
   gap: 20px;
@@ -383,7 +374,6 @@ body {
   flex-wrap: wrap;
 }
 
-/* Deals Right Image */
 .deals-img-right {
   flex: 1 1 50%;
   height: 423px;
@@ -398,7 +388,6 @@ body {
   object-fit: cover;
 }
 
-/* Overlay on Right Image */
 .overlay3 {
   position: absolute;
   top: 0;
@@ -425,7 +414,6 @@ body {
   text-decoration: underline;
 }
 
-/* Deals Left Images Container */
 .deals-img-left {
   flex: 1 1 40%;
   display: flex;
@@ -435,7 +423,6 @@ body {
   min-width: 250px;
 }
 
-/* Deals Left Single Image Wrapper */
 .deals-img-left1 {
   position: relative;
   width: 100%;
@@ -449,7 +436,6 @@ body {
   object-fit: cover;
 }
 
-/* Overlay on Left Images */
 .overlay1 {
   position: absolute;
   top: 0;
@@ -476,7 +462,7 @@ body {
   text-decoration: underline;
 }
 
-/* ======== Responsive for Tablets & Mobiles ======== */
+/* Deals Responsive */
 @media screen and (max-width: 768px) {
   .deals-img {
     display: block;
@@ -510,6 +496,7 @@ body {
   }
 }
 
+/* ======= Join Section ======= */
 .join-section img {
   width: 100%;
   display: block;
@@ -573,7 +560,7 @@ body {
   background-color: rgba(200, 70, 6, 1);
 }
 
-/* Responsive */
+/* Join Section Responsive */
 @media screen and (max-width: 768px) {
   .join-text {
     top: 30%;
@@ -593,17 +580,20 @@ body {
 
   .join-input input {
     width: 218px;
+    height: 30px;
     padding: 0 15px;
     font-size: 14px;
   }
 
   .join-input button {
     width: 100px;
+    height: 30px;
     font-size: 14px;
     border-radius: 0 4px 4px 0;
   }
 }
 
+/* ======= Footer Section ======= */
 .footer-container {
   display: flex;
   margin: 50px 160px;
@@ -659,7 +649,7 @@ body {
   transform: scale(1.1);
 }
 
-/* Responsive */
+/* Footer Responsive */
 @media screen and (max-width: 768px) {
   .footer-container {
     display: block;

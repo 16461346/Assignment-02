@@ -320,3 +320,154 @@ body {
   font-size: 2rem;
 }
 }
+
+/* Deals Section Header */
+.deals-head {
+  margin-bottom: 120px;
+}
+
+.deals-head > h3 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.deals-head > p {
+  text-align: center;
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Deals Image Container */
+.deals-img {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin: 120px 150px;
+}
+
+/* Deals Right Image */
+.deals-img-right {
+  width: 100%;
+  height: 423px;
+  position: relative;
+}
+
+.deals-img-right img {
+  width: 100%;
+  height: 100%;
+  border-radius: 22px;
+  object-fit: cover;
+}
+
+/* Overlay on Right Image */
+.overlay3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  border-radius: 22px;
+}
+
+.overlay-text3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 27px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.overlay-text3 h4 {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Deals Left Images Container */
+.deals-img-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 423px;
+}
+
+/* Deals Left Single Image Wrapper */
+.deals-img-left1 {
+  width: 366px;
+  height: 201px;
+  position: relative;
+}
+
+.deals-img-left1 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+/* Overlay on Left Images */
+.overlay1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
+}
+
+.overlay-text1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.overlay-text1 h4 {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Responsive for Tablets & Mobiles */
+@media screen and (max-width: 768px) {
+  .deals-img {
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0;
+  }
+
+  .deals-img-right {
+    width: 100%;
+    height: auto; /* উচ্চতা স্বয়ংক্রিয় */
+    margin-bottom: 20px; /* একটু স্পেসিং */
+  }
+
+  .deals-img-right img {
+    height: auto;
+  }
+
+  .deals-img-left {
+    display: block;
+    gap: 20px;
+    height: auto; /* উচ্চতা স্বয়ংক্রিয় */
+  }
+
+  .deals-img-left1 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px; /* ছবি আলাদা করতে */
+  }
+
+  .deals-img-left1 img {
+    height: auto;
+  }
+}

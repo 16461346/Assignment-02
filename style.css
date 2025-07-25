@@ -442,13 +442,13 @@ body {
     display: block;
     width: 100%;
     padding: 0 20px;
-    margin: 0;
+    margin: 0 auto;
   }
 
   .deals-img-right {
     width: 100%;
-    height: auto; /* উচ্চতা স্বয়ংক্রিয় */
-    margin-bottom: 20px; /* একটু স্পেসিং */
+    height: auto; 
+    margin-bottom: 20px;
   }
 
   .deals-img-right img {
@@ -470,4 +470,79 @@ body {
   .deals-img-left1 img {
     height: auto;
   }
+}
+.join-section img{
+  width: 100%;
+}
+.join-section{
+  position: relative;
+}
+.join-text{
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  text-align: center;
+}
+.join-text > h2{
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+.join-input input{
+  width: 644px;
+  height: 50px;
+  border: none;
+  padding: 20px;
+}
+.join-input input[type="email"]:focus{
+  border: none;
+  outline: none;
+}
+.join-input button{
+  width: 166px;
+  height: 50px;
+  margin-left: -5px;
+  border: none;
+  background-color: rgba(233, 90, 8, 1);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+@media screen and (max-width:768px) {
+  
+  .join-section img{
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+.join-text > h2{
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}
+.join-input input{
+  width: 218px;
+  height: 50px;
+  border: none;
+  padding: 20px;
+}
+.join-input button{
+  width: 100px;
+  height: 50px;
+  margin-left: -5px;
+  border: none;
+  background-color: rgba(233, 90, 8, 1);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.join-text{
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  text-align: center;
+}
 }

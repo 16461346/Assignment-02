@@ -495,8 +495,14 @@ body {
     height: auto;
   }
   .overlay-text3{
-    font-size: 14px;
+    font-size: .8rem;
   }
+  .overlay1 {
+  height: 98%;
+}
+.overlay3{
+  height: 98%;
+}
 }
 
 /* ======= Join Section ======= */
